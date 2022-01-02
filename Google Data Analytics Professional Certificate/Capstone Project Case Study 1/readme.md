@@ -1,4 +1,5 @@
-"Scenario
+https://public.tableau.com/app/profile/elroy.quek/viz/CyclisticCaseStudyComparisonofCasualandAnnualusersofChicagoDivvybikesharingsystemfrom122020-112021/TimeOfDayBikeTypeComparison
+Scenario
 You are a junior data analyst working in the marketing analyst team at Cyclistic, a bike-share company in Chicago.
 
 In 2016, Cyclistic launched a successful bike-share offering. Since then, the program has grown to a fleet of 5,824 bicycles that are geotracked and locked into a network of 692 stations across Chicago. 
