@@ -29,21 +29,15 @@ Cyclistic is a fictional company, but we can assume it would use a similar app t
 Regarding this [dataset](https://divvy-tripdata.s3.amazonaws.com/index.html)
 
 - Cyclistic is a fictional company, data is provided by [Motivate International Inc](https://en.wikipedia.org/wiki/Motivate_(company)) which operates the City of Chicago’s [Divvy](https://en.wikipedia.org/wiki/Divvy) bicycle sharing service. For the purposes of this case study, the data for Divvy can be assumed to be for Cyclistic and confirmed to be appropriate for use.
-
 - The case study instructions are to use the past 12 months of Cyclistic trip data, as of the start of this case study that is Data from 12/2020 to 11/2021.There is available data from previous years as well, but for they might not be as relevant or useful as the more recent data. 
-
 - Under the [Data License Agreement](https://ride.divvybikes.com/data-license-agreement), the data is non-exclusive, royalty-free, limited, perpetual license to access, reproduce, analyze, copy, modify, distribute in your product or service and use the Data for any lawful purpose
 - Riders’ personally identifiable information are unavailable This means that you won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes. Therefore, there is no issue with
-
 - Regarding the reliability of the data, the source of it is Motivate International Inc which is owned by Lyft, while the data appears to be recorded by the Divvy system that is owned by the Chicago Department of Transportation.
 Considering the involvement of these reputable names, the instructions from the Google Analytics course to use it, the lack of possible user error for data input, we can assume there is no issue with bias and credibility for this dataset
-
 - As previously mentioned, the dataset involves 12 months of CSV files, which is imported to MS SQL Server for data cleaning. 
 We will use Microsoft SQL Server instead of Excel due to the the large size of the dataset, SQL would be more useful to clean and transform the data for analysis. SQL queries can be documented easily as well to demonstrate and share the process.
-
 R is another possible option as well to document all steps of the data analysis process. We have used R for the other Google Analytics Capstone project, a [Bellabeat case study](https://www.kaggle.com/elroyq/case-study-on-bellabeat)                                                             
 After importing and querying the data from each file, each file is observed to contain the columns of rider id, type of bike used, start time and end time, starting and ending station name, starting and ending latitudes and longtitudes, type of member for each individual ride.
-
 -The dataset is specific to Cyclistic's userbase and is suitable for analysis of trends in usage by casual and annual members. 
 More data such as from previous years or other open-source bike sharing datasets could be considered for analysis as well for future analyses.             
 
@@ -51,6 +45,7 @@ More data such as from previous years or other open-source bike sharing datasets
 [Link](https://github.com/ElroyQQ/Portfolioproject/blob/main/Google%20Data%20Analytics%20Professional%20Certificate/Capstone%20Project%20Case%20Study%201/Cyclistic%20SQL%20Data%20cleaning%20and%20Transformation)
 
 **4. Analyze and Share Phase**
+Data viz available on [Tableau Public](https://public.tableau.com/app/profile/elroy.quek/viz/CyclisticCaseStudyComparisonofCasualandAnnualusersofChicagoDivvybikesharingsystemfrom122020-112021/TimeOfDayBikeTypeComparison)
 
 **By Month**: For most of the year, there is a larger number of trips taken by Annual members as compared to Casual riders each month, despite the number of 
 At the same time, the Casual riders take longer rides on average, even double the length of rides for Annual members.
