@@ -1,4 +1,5 @@
 https://public.tableau.com/app/profile/elroy.quek/viz/CyclisticCaseStudyComparisonofCasualandAnnualusersofChicagoDivvybikesharingsystemfrom122020-112021/TimeOfDayBikeTypeComparison
+
 Scenario
 You are a junior data analyst working in the marketing analyst team at Cyclistic, a bike-share company in Chicago.
 
