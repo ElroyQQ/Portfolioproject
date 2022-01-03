@@ -1,4 +1,4 @@
-<b>1. Ask Phase<b>
+1. Ask Phase
 
 1) Business Task
 To use Cyclistic historical ridership data on casual and annual members to help design a new marketing strategy to convert casual riders into annual members.
@@ -25,54 +25,55 @@ From this scenario, we can identify 3 basic questions and possible ways to answe
 Cyclistic is a fictional company, but we can assume it would use a similar app that provide information on bike and station locations. 
 - However, we might not be able to get data from historical data to support this.					
 
-**2. Prepare Phase**
+2. Prepare Phase
 Regarding this [dataset](https://divvy-tripdata.s3.amazonaws.com/index.html)
 
-- Cyclistic is a fictional company, data is provided by [Motivate International Inc](https://en.wikipedia.org/wiki/Motivate_(company)) which operates the City of Chicago’s [Divvy](https://en.wikipedia.org/wiki/Divvy) bicycle sharing service. For the purposes of this case study, the data for Divvy can be assumed to be for Cyclistic and confirmed to be appropriate for use.
+- Cyclistic is a fictional company, data is provided by Motivate International Inc(https://en.wikipedia.org/wiki/Motivate_(company) which operates the City of Chicago’s Divvy (https://en.wikipedia.org/wiki/Divvy) bicycle sharing service. For the purposes of this case study, the data for Divvy can be assumed to be for Cyclistic and confirmed to be appropriate for use.
 - The case study instructions are to use the past 12 months of Cyclistic trip data, as of the start of this case study that is Data from 12/2020 to 11/2021.There is available data from previous years as well, but for they might not be as relevant or useful as the more recent data. 
-- Under the [Data License Agreement](https://ride.divvybikes.com/data-license-agreement), the data is non-exclusive, royalty-free, limited, perpetual license to access, reproduce, analyze, copy, modify, distribute in your product or service and use the Data for any lawful purpose
+- Under the Data License Agreement(https://ride.divvybikes.com/data-license-agreement), the data is non-exclusive, royalty-free, limited, perpetual license to access, reproduce, analyze, copy, modify, distribute in your product or service and use the Data for any lawful purpose
 - Riders’ personally identifiable information are unavailable This means that you won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes. Therefore, there is no issue with
 - Regarding the reliability of the data, the source of it is Motivate International Inc which is owned by Lyft, while the data appears to be recorded by the Divvy system that is owned by the Chicago Department of Transportation.
 Considering the involvement of these reputable names, the instructions from the Google Analytics course to use it, the lack of possible user error for data input, we can assume there is no issue with bias and credibility for this dataset
 - As previously mentioned, the dataset involves 12 months of CSV files, which is imported to MS SQL Server for data cleaning. 
 We will use Microsoft SQL Server instead of Excel due to the the large size of the dataset, SQL would be more useful to clean and transform the data for analysis. SQL queries can be documented easily as well to demonstrate and share the process.
-R is another possible option as well to document all steps of the data analysis process. We have used R for the other Google Analytics Capstone project, a [Bellabeat case study](https://www.kaggle.com/elroyq/case-study-on-bellabeat)                                                             
+R is another possible option as well to document all steps of the data analysis process. We have used R for the other Google Analytics Capstone project, a Bellabeat case study(https://www.kaggle.com/elroyq/case-study-on-bellabeat)                                                             
 After importing and querying the data from each file, each file is observed to contain the columns of rider id, type of bike used, start time and end time, starting and ending station name, starting and ending latitudes and longtitudes, type of member for each individual ride.
 -The dataset is specific to Cyclistic's userbase and is suitable for analysis of trends in usage by casual and annual members. 
 More data such as from previous years or other open-source bike sharing datasets could be considered for analysis as well for future analyses.             
 
-**3. Process Phase**
-[Link](https://github.com/ElroyQQ/Portfolioproject/blob/main/Google%20Data%20Analytics%20Professional%20Certificate/Capstone%20Project%20Case%20Study%201/Cyclistic%20SQL%20Data%20cleaning%20and%20Transformation)
+3. Process Phase
+(https://github.com/ElroyQQ/Portfolioproject/blob/main/Google%20Data%20Analytics%20Professional%20Certificate/Capstone%20Project%20Case%20Study%201/Cyclistic%20SQL%20Data%20cleaning%20and%20Transformation)
 
-**4. Analyze and Share Phase**
-Data viz available on [Tableau Public](https://public.tableau.com/app/profile/elroy.quek/viz/CyclisticCaseStudyComparisonofCasualandAnnualusersofChicagoDivvybikesharingsystemfrom122020-112021/TimeOfDayBikeTypeComparison)
+4. Analyze and Share Phase
+Data viz available on Tableau Public(https://public.tableau.com/app/profile/elroy.quek/viz/CyclisticCaseStudyComparisonofCasualandAnnualusersofChicagoDivvybikesharingsystemfrom122020-112021/TimeOfDayBikeTypeComparison)
 
-**By Month**: For most of the year, there is a larger number of trips taken by Annual members as compared to Casual riders each month, despite the number of 
+By Month: For most of the year, there is a larger number of trips taken by Annual members as compared to Casual riders each month, despite the number of 
 At the same time, the Casual riders take longer rides on average, even double the length of rides for Annual members.
 
 Without customer identifiers or user IDs to determine the number of unique Annual and Casual users,  we cannot conclude that Casual riders take less frequent rides than Annual members.
-We could assume that Casual riders take more frequent but longer rides, which would be logical as seen from [Divvy's pricing plans](https://divvybikes.com/pricing).
+We could assume that Casual riders take more frequent but longer rides, which would be logical as seen from Divvy's pricing plans(https://divvybikes.com/pricing).
 They would not find the annual membership with unlimited rides as appealing when they could be more cost-effective and pay less in fixed rates per trip.
 
 Comparing the data over the course of a year, there appears to be a lower number of rides and average ride duration at the beginning and end of the year, while the second half of the year (May to October 2021) has noticeably higher number of rides for  Annual and Casual users. There is no observable difference for Annual vs Casual users.
 However, taking into account the current COVID-19 pandemic and the possible effect of Chicago COVID restrictions and subsequent reopening on June 11 2021, we should be cautious in making conclusions about monthly trends. 
 Taking this into consideration, there would be still be differences among different months for bike usage, and instead of a mandatory annual membership there could be an option for half-yearly or even monthly  membership. The annual membership would still be at a discounted price compared to them to encourage the commitment. 
 
-**By Week**: Looking at weekly trends, both Annual members and Casual riders use Divvy bikes more frequently on weekends (Saturday and Sunday). A new annual membership only for weekends would be more targeted to Casual riders and their usage patterns . An alternative could be to modify the existing annual membership to be split into tiers based on number of unlimited ride days per week. For example, an annual membership that allows for 2 days of unlimited bike use, or 5 days at a higher price. This would appeal to 2 groups of customers that use the bike service for travelling to work on weekdays or for leisure on weekends.	
+By Week: Looking at weekly trends, both Annual members and Casual riders use Divvy bikes more frequently on weekends (Saturday and Sunday). A new annual membership only for weekends would be more targeted to Casual riders and their usage patterns . An alternative could be to modify the existing annual membership to be split into tiers based on number of unlimited ride days per week. For example, an annual membership that allows for 2 days of unlimited bike use, or 5 days at a higher price. This would appeal to 2 groups of customers that use the bike service for travelling to work on weekdays or for leisure on weekends.	
 
-**By Time of day**: Both Annual and Casual users have similar trends for the number of trips starting at each hour of the day, they are lowest at the first and last few hours of the day while peaking at 5PM. There is a steady increase from 5AM onwards, dropping after 5PM. There is a less steep curve for Casual riders, implying their bike usage has less fixed purposes.
+By Time of day: Both Annual and Casual users have similar trends for the number of trips starting at each hour of the day, they are lowest at the first and last few hours of the day while peaking at 5PM. There is a steady increase from 5AM onwards, dropping after 5PM. There is a less steep curve for Casual riders, implying their bike usage has less fixed purposes.
 This trend might be due to users using the bike service for getting to and fro from work, and there could be a change to annual membership to allow for lower rates during off-peak hours. This would incentivise the Casual riders who find current flat membership rates to be not worth their money when they prefer to use it before and after daytime hours. 											
-**By Bike type**: Among the 3 bike types recorded, both types of users use classic bikes the most, followed by ebikes and then docked bikes. From the Divvy website, ebikes have an additional charge for their extra features, while there is no information online about docked bikes. Docked bikes are likely to be an error in the system that counts those unused in the docking stations, or used as a kind of system test by the company. 
+By Bike type: Among the 3 bike types recorded, both types of users use classic bikes the most, followed by ebikes and then docked bikes. From the Divvy website, ebikes have an additional charge for their extra features, while there is no information online about docked bikes. Docked bikes are likely to be an error in the system that counts those unused in the docking stations, or used as a kind of system test by the company. 
 While there is a larger difference between the use of classic and ebikes for Annual members, this might be part of the decision made when the users chose the annual membership.									
-**5. Act Phase**
 
-"From the available data, we can make 2 main recommendations for Cyclistic to follow
+5. Act Phase
+
+From the available data, we can make 2 main recommendations for Cyclistic to follow
 
 1) Split the annual membership into multiple plans, similar to how Casual riders can either pay by single trips or day passes. 
 The default annual membership would still be available, but with options for monthly, half-yearly, number of unlimited days a week etc. This flexibility would allow for Casual riders put off by the fixed rules and pricing to choose which membership to go for. This might not be in line with what the financial analysts expect with more profitability when Casual riders are converted to Annual members, but these customer-friendly options could help to spread Cyclistic's reputation and build customer loyalty.
 
 2) A peak hour pricing surcharge could be introduced, along with an accompanying decrease in off-peak hours to minimise dissent from the existing customer base. The additional surcharge can be excluded or discounted for Annual members as an additional incentive for Casual riders to convert. There are no analyses on bike availability being affected by time of day or day of the week due to lack of data, however this pricing change could help to minimise such problems if they exist or arise. 
 
-Looking foward, future analyses could be done if there is data on number of unique users instead of just individual rides, this could be done using anonymised payment information if possible. Demographic data would also be helpful to identify how to target advertisements for the customer base. This particular dataset might not be able to make definitive conclusions on user trends due to the ongoing COVID-19 pandemic and the resulting irregular restrictions on daily life. "											
+Looking foward, future analyses could be done if there is data on number of unique users instead of just individual rides, this could be done using anonymised payment information if possible. Demographic data would also be helpful to identify how to target advertisements for the customer base. This particular dataset might not be able to make definitive conclusions on user trends due to the ongoing COVID-19 pandemic and the resulting irregular restrictions on daily life. 									
 
 
