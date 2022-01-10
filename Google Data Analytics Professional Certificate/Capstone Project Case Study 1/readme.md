@@ -1,6 +1,3 @@
-Data visualisations at
-https://public.tableau.com/app/profile/elroy.quek/viz/CyclisticCaseStudyComparisonofCasualandAnnualusersofChicagoDivvybikesharingsystemfrom122020-112021/TimeOfDayBikeTypeComparison
-
 Scenario
 You are a junior data analyst working in the marketing analyst team at Cyclistic, a bike-share company in Chicago.
 
@@ -18,3 +15,6 @@ Rather than creating a marketing campaign that targets all-new customers, Moreno
 
 The marketing analyst team needs to better understand how annual members and casual riders differ, why
 casual riders would buy a membership, and how digital media could affect their marketing tactics. Moreno and her team are interested in analyzing the Cyclistic historical bike trip data to identify trends.										
+
+Data visualisations at
+https://public.tableau.com/app/profile/elroy.quek/viz/CyclisticCaseStudyComparisonofCasualandAnnualusersofChicagoDivvybikesharingsystemfrom122020-112021/TimeOfDayBikeTypeComparison
