@@ -12,6 +12,7 @@ started_at datetime,
 ended_at datetime,
 member_casual nvarchar(255)
 )
+
 --We will use INSERT INTO and UNION ALL to insert the columns we wish to use for our analysis
 INSERT INTO Cyclistic12monthsData
 SELECT ride_id, rideable_type, started_at, ended_at, member_casual
