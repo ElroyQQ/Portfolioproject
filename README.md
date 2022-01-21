@@ -1,4 +1,4 @@
-Projects for data analysis portfolio
+Projects for data analysis portfolio.
 
 Portfolio website: [https://elroyqq.github.io/ElroyQQ.github.io-/](https://elroyqq.github.io/ElroyQQ.github.io-/)
 
