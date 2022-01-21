@@ -4,4 +4,4 @@ Portfolio website: [https://elroyqq.github.io/ElroyQQ.github.io-/](https://elroy
 
 Other links:
 [Linkedin](https://www.linkedin.com/in/elroy-quek-919b12147/) 
-[Tableau](https://public.tableau.com/app/profile/elroy.quek)
+[Tableau Public](https://public.tableau.com/app/profile/elroy.quek)
