@@ -2,7 +2,6 @@
 
 1) Business Task
 To use Cyclistic historical ridership data on casual and annual members to help design a new marketing strategy to convert casual riders into annual members.
-
 2) Key stakeholders: 
  Lily Moreno: The director of marketing and your manager. Moreno is responsible for the development of campaigns
 and initiatives to promote the bike-share program. These may include email, social media, and other channels.
@@ -11,10 +10,10 @@ and initiatives to promote the bike-share program. These may include email, soci
 
 From this scenario, we can identify 3 basic questions and possible ways to answer them
 
-1. How do annual members and casual riders use Cyclistic bikes differently? 
+a. How do annual members and casual riders use Cyclistic bikes differently? 
 - Cyclistic historical trip data would be able to answer this, they might use the bikes in different frequencies for each day of the week or month, different trip durations, at different hours of the day.
 
-2. Why would casual riders buy Cyclistic annual memberships?
+b. Why would casual riders buy Cyclistic annual memberships?
 - Cyclistic offers multiple pricing plans, it would be a reasonable assumption that the casual riders choose the single use pricings as it fits their bike usage better. The annual memberships are most likely not cost -effective for them.
 - We would need to make observations on how they use the bikes differently from the annual users as these annual users are likely choosing annual memberships with the same cost-benefit reasoning
 - We can then make recommendations for changes to the pricing plans or introduce new additional annual pricing plans to incentivise the casual riders to convert.
@@ -24,6 +23,9 @@ From this scenario, we can identify 3 basic questions and possible ways to answe
 - Commonly used digital media with opportunities for advertising such as Instagram or Facebook could be used, but a more cost-effective way would be advertise it inside a mobile phone app such as Divvy's.
 Cyclistic is a fictional company, but we can assume it would use a similar app that provide information on bike and station locations. 
 - However, we might not be able to get data from historical data to support this.					
+
+
+
 
 2. Prepare Phase
 Regarding this [dataset](https://divvy-tripdata.s3.amazonaws.com/index.html)
@@ -41,11 +43,20 @@ After importing and querying the data from each file, each file is observed to c
 -The dataset is specific to Cyclistic's userbase and is suitable for analysis of trends in usage by casual and annual members. 
 More data such as from previous years or other open-source bike sharing datasets could be considered for analysis as well for future analyses.             
 
+
+
+
 3. Process Phase
+MS SQL Server was used for data cleaning and transformation
 (https://github.com/ElroyQQ/Portfolioproject/blob/main/Google%20Data%20Analytics%20Professional%20Certificate/Capstone%20Project%20Case%20Study%201/Cyclistic%20SQL%20Data%20cleaning%20and%20Transformation)
 
+
+
+
 4. Analyze and Share Phase
+Tableau Public Desktop was used for analysis and visualisation
 Data viz available on Tableau Public(https://public.tableau.com/app/profile/elroy.quek/viz/CyclisticCaseStudyComparisonofCasualandAnnualusersofChicagoDivvybikesharingsystemfrom122020-112021/TimeOfDayBikeTypeComparison)
+
 
 By Month: For most of the year, there is a larger number of trips taken by Annual members as compared to Casual riders each month, despite the number of 
 At the same time, the Casual riders take longer rides on average, even double the length of rides for Annual members.
@@ -63,7 +74,10 @@ By Week: Looking at weekly trends, both Annual members and Casual riders use Div
 By Time of day: Both Annual and Casual users have similar trends for the number of trips starting at each hour of the day, they are lowest at the first and last few hours of the day while peaking at 5PM. There is a steady increase from 5AM onwards, dropping after 5PM. There is a less steep curve for Casual riders, implying their bike usage has less fixed purposes.
 This trend might be due to users using the bike service for getting to and fro from work, and there could be a change to annual membership to allow for lower rates during off-peak hours. This would incentivise the Casual riders who find current flat membership rates to be not worth their money when they prefer to use it before and after daytime hours. 											
 By Bike type: Among the 3 bike types recorded, both types of users use classic bikes the most, followed by ebikes and then docked bikes. From the Divvy website, ebikes have an additional charge for their extra features, while there is no information online about docked bikes. Docked bikes are likely to be an error in the system that counts those unused in the docking stations, or used as a kind of system test by the company. 
-While there is a larger difference between the use of classic and ebikes for Annual members, this might be part of the decision made when the users chose the annual membership.									
+While there is a larger difference between the use of classic and ebikes for Annual members, this might be part of the decision made when the users chose the annual membership.						
+
+
+
 
 5. Act Phase
 
