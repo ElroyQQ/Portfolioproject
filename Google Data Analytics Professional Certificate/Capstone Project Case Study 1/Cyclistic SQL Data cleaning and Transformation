@@ -51,8 +51,12 @@ UNION ALL
 SELECT ride_id, rideable_type, started_at, ended_at, member_casual
 FROM dbo.['202111-divvy-tripdata$']
 
---Data cleaning
---We will check for any NULLS
+
+
+
+/*Data cleaning
+We will check for any NULLS*/
+
 SELECT *
 FROM Cyclistic12monthsData
 WHERE ride_id IS NULL
@@ -79,6 +83,9 @@ FROM Cyclistic12monthsData
 GROUP BY ride_id, rideable_type,started_at, ended_at, member_casual
 HAVING COUNT(*)>1
 
+
+
+
 --To remove the duplicate rows, we will use a CTE and PARTITION BY. As ride_id should be unique for each trip, we will use it as a reference point.
 WITH RowNumCTE AS 
 (
@@ -89,14 +96,20 @@ FROM Cyclistic12monthsData
 )
 DELETE FROM RowNumCTE WHERE row_num <>1
 
+
+
+
 --Checking for duplicates again
 SELECT ride_id, rideable_type,started_at, ended_at, member_casual, COUNT(*) AS num_of_duplicates
 FROM Cyclistic12monthsData
 GROUP BY ride_id, rideable_type,started_at, ended_at, member_casual
 HAVING COUNT(*)>1
 
---Adding new useful columns
---We wil add a column for trip_duration for analysis as start and end times are not as easy to use
+
+
+
+/*Adding new useful columns
+We wil add a column for trip_duration for analysis as start and end times are not as easy to use*/
 ALTER TABLE Cyclistic12monthsData
 ADD ride_duration numeric
 
@@ -117,6 +130,9 @@ SELECT ride_id, ride_duration
 FROM Cyclistic12monthsData
 WHERE ride_duration <=0
 
+
+
+
 --Adding new column for day of the week, we will use the started_at column as that is the day where each trip started
 ALTER TABLE Cyclistic12monthsData
 ADD weekday nvarchar(255)
@@ -128,6 +144,9 @@ SET weekday = DATENAME(WEEKDAY, started_at)
 SELECT ride_id, weekday
 FROM Cyclistic12monthsData
 
+
+
+
 --Adding a datetime column for each ride_id, there might be different start and end dates for some trips. We will use the started_at column as a reference point
 ALTER TABLE Cyclistic12monthsData
 ADD ride_date date
@@ -138,6 +157,9 @@ SET ride_date = CONVERT(date, started_at)
 --Checking
 Select *
 FROM Cyclistic12monthsData
+
+
+
 
 /*Now that our data is cleaned and ready to be analysed, we will import the data into Tableau Public for analysis and visualisation
 Tableau Public is a free software that can create interactive data visualizations to share freely, which is suitable for this project.
