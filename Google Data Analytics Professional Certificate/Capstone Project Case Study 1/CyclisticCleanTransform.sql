@@ -1,4 +1,4 @@
-/*After querying the 12 tables we imported, we observe that there are many NULL values for the start and end station names. 
+/*After querying the 12 tables we imported, we can observe that there are many NULL values for the start and end station names. 
 Considering these NULLs with no reference table to update them, and the geographical longtitude and latitude data not being useful without them, 
 We will exclude the geographical data from our analysis.*/
 
@@ -76,7 +76,9 @@ WHERE ended_at IS NULL
 SELECT *
 FROM Cyclistic12monthsData
 WHERE member_casual IS NULL
+
 -- We have confirmed there are no NULL values
+
 --To check for duplicates
 SELECT ride_id, rideable_type,started_at, ended_at, member_casual, COUNT(*) AS num_of_duplicates
 FROM Cyclistic12monthsData
@@ -131,8 +133,6 @@ FROM Cyclistic12monthsData
 WHERE ride_duration <=0
 
 
-
-
 --Adding new column for day of the week, we will use the started_at column as that is the day where each trip started
 ALTER TABLE Cyclistic12monthsData
 ADD weekday nvarchar(255)
@@ -145,8 +145,6 @@ SELECT ride_id, weekday
 FROM Cyclistic12monthsData
 
 
-
-
 --Adding a datetime column for each ride_id, there might be different start and end dates for some trips. We will use the started_at column as a reference point
 ALTER TABLE Cyclistic12monthsData
 ADD ride_date date
@@ -157,8 +155,6 @@ SET ride_date = CONVERT(date, started_at)
 --Checking
 Select *
 FROM Cyclistic12monthsData
-
-
 
 
 /*Now that our data is cleaned and ready to be analysed, we will import the data into Tableau Public for analysis and visualisation
