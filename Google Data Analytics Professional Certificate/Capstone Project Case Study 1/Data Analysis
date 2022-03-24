@@ -6,10 +6,10 @@ To use Cyclistic historical ridership data on casual and annual members to help 
 2) Key stakeholders: 
 - Lily Moreno: The director of marketing and your manager. Moreno is responsible for the development of campaigns and initiatives to promote the bike-share program. 
                These may include email, social media, and other channels.
-- Cyclistic marketing analytics team: Fellow data analysts
-- Cyclistic executive team: The notoriously detail-oriented executive team will decide whether to approve
+- Cyclistic marketing analytics team: Fellow data analysts.
+- Cyclistic executive team: The notoriously detail-oriented executive team will decide whether to approve.
 
-From this scenario, we can identify 3 basic questions and possible ways to answer them
+From this scenario, we can identify 3 basic questions and possible ways to answer them:
 A. How do annual members and casual riders use Cyclistic bikes differently? 
 - Cyclistic historical trip data would be able to answer this, they might use the bikes in different frequencies for each day of the week or month, different trip durations, at different hours of the day.
 
@@ -28,7 +28,7 @@ Cyclistic is a fictional company, but we can assume it would use a similar app t
 
 
 2. Prepare Phase
-Regarding this [dataset](https://divvy-tripdata.s3.amazonaws.com/index.html)
+Regarding this https://divvy-tripdata.s3.amazonaws.com/index.html
 
 - Cyclistic is a fictional company, data is provided by Motivate International Inc(https://en.wikipedia.org/wiki/Motivate_(company) which operates the City of Chicago’s Divvy (https://en.wikipedia.org/wiki/Divvy) bicycle sharing service. For the purposes of this case study, the data for Divvy can be assumed to be for Cyclistic and confirmed to be appropriate for use.
 - The case study instructions are to use the past 12 months of Cyclistic trip data, as of the start of this case study that is Data from 12/2020 to 11/2021.There is available data from previous years as well, but for they might not be as relevant or useful as the more recent data. 
@@ -44,13 +44,10 @@ After importing and querying the data from each file, each file is observed to c
 More data such as from previous years or other open-source bike sharing datasets could be considered for analysis as well for future analyses.             
 
 
-
-
 3. Process Phase
-MS SQL Server was used for data cleaning and transformation
-(https://github.com/ElroyQQ/Portfolioproject/blob/main/Google%20Data%20Analytics%20Professional%20Certificate/Capstone%20Project%20Case%20Study%201/Cyclistic%20SQL%20Data%20cleaning%20and%20Transformation)
 
-
+MS SQL Server was used for data cleaning and transformation.
+Details in parent folder of this file.
 
 
 4. Analyze and Share Phase
