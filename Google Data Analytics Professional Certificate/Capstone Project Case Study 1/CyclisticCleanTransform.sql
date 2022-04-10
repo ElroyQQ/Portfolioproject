@@ -120,7 +120,7 @@ SET ride_duration = DATEDIFF(second, started_at, ended_at)
 
 /*Checking for trips less or equal to 0 seconds, we will remove them as such short duration trips are unlikely to be actual trips 
 and are probably errorS/mistakes or testing rides by the company */
-SELECT ride_id, trip_duration
+SELECT ride_id, ride_duration
 FROM Cyclistic12monthsData
 WHERE ride_duration <=0
 
